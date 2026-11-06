@@ -1,0 +1,333 @@
+{
+  "caso": {
+    "id": "CT04",
+    "descricao": "Conversão de valor em euro com histórico mensal",
+    "mensagem": "Quanto ficam 12.500 euros em reais hoje? E como o euro andou no último mês?",
+    "esperado": {
+      "http_status": 200,
+      "status": "sucesso",
+      "intencao": "cotacao_moeda"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 3914,
+  "resposta": {
+    "status": "sucesso",
+    "request_id": "req_mw3lq5g7_wmwpyc",
+    "intencao": "cotacao_moeda",
+    "parametros": {
+      "moeda": "EUR",
+      "periodo_dias": 30,
+      "valor_conversao": 12500
+    },
+    "resposta": {
+      "titulo": "Euro em R$ e Análise de Comportamento Recente",
+      "resumo_executivo": "12.500 euros equivalem a R$ 76.411,25 hoje, utilizando a cotação de venda de 6,1129. O euro apresentou uma tendência de alta no último mês, com volatilidade diária de 1,74%.",
+      "insights": [
+        {
+          "categoria": "Conversão de Moeda",
+          "descricao": "O valor de 12.500 euros convertido para reais é de R$ 76.411,25, com base na cotação de venda.",
+          "impacto": "neutro"
+        },
+        {
+          "categoria": "Comportamento do Câmbio",
+          "descricao": "O euro demonstrou uma tendência de alta no último mês, com uma variação acumulada de 4,1%.",
+          "impacto": "atencao"
+        },
+        {
+          "categoria": "Volatilidade",
+          "descricao": "A volatilidade diária do euro foi de 1,74%, indicando oscilações significativas no período.",
+          "impacto": "critico"
+        },
+        {
+          "categoria": "Risco Cambial",
+          "descricao": "A alta volatilidade e a tendência de valorização do euro representam um risco cambial elevado.",
+          "impacto": "critico"
+        }
+      ],
+      "alertas": [
+        "Risco cambial alto devido à volatilidade e variação no período."
+      ],
+      "nivel_risco": "alto",
+      "recomendacao": "Considerando a alta volatilidade e tendência de valorização do euro, recomenda-se travar o câmbio, parcelar o fechamento da operação ou revisar a margem de lucro.",
+      "resposta_formatada": "**Euro em R$ e Análise de Comportamento Recente**\n\n12.500 euros equivalem a R$ 76.411,25 hoje, utilizando a cotação de venda de 6,1129. O euro apresentou uma tendência de alta no último mês, com volatilidade diária de 1,74%.\n\n**Principais Observações:**\n*   **Conversão:** R$ 76.411,25 para 12.500 euros.\n*   **Tendência:** Alta no último mês (variação de 4,1%).\n*   **Volatilidade:** Diária de 1,74%, indicando oscilações significativas.\n\n**Recomendação:**\nDevido ao risco cambial elevado, sugere-se travar o câmbio, parcelar o fechamento ou revisar a margem."
+    },
+    "output": "**Euro em R$ e Análise de Comportamento Recente**\n\n12.500 euros equivalem a R$ 76.411,25 hoje, utilizando a cotação de venda de 6,1129. O euro apresentou uma tendência de alta no último mês, com volatilidade diária de 1,74%.\n\n**Principais Observações:**\n*   **Conversão:** R$ 76.411,25 para 12.500 euros.\n*   **Tendência:** Alta no último mês (variação de 4,1%).\n*   **Volatilidade:** Diária de 1,74%, indicando oscilações significativas.\n\n**Recomendação:**\nDevido ao risco cambial elevado, sugere-se travar o câmbio, parcelar o fechamento ou revisar a margem.",
+    "dados_fonte": {
+      "fonte": "AwesomeAPI - Economia",
+      "url": "https://economia.awesomeapi.com.br/json/daily/EUR-BRL/30",
+      "dados": {
+        "par": "EUR/BRL",
+        "nome": "Euro/Real Brasileiro",
+        "atualizado_em": "2026-11-05 10:19:30",
+        "cotacao_atual": {
+          "compra": 6.1109,
+          "venda": 6.1129
+        },
+        "serie_historica": [
+          {
+            "data": "02/10/2026",
+            "compra": 5.8702,
+            "venda": 5.8722,
+            "maxima": 5.9025,
+            "minima": 5.8557
+          },
+          {
+            "data": "04/10/2026",
+            "compra": 5.8765,
+            "venda": 5.8785,
+            "maxima": 5.8862,
+            "minima": 5.8702
+          },
+          {
+            "data": "05/10/2026",
+            "compra": 5.6061,
+            "venda": 5.6081,
+            "maxima": 5.8805,
+            "minima": 5.5457
+          },
+          {
+            "data": "06/10/2026",
+            "compra": 5.6066,
+            "venda": 5.6086,
+            "maxima": 5.6324,
+            "minima": 5.5716
+          },
+          {
+            "data": "07/10/2026",
+            "compra": 5.6217,
+            "venda": 5.6237,
+            "maxima": 5.6255,
+            "minima": 5.5678
+          },
+          {
+            "data": "08/10/2026",
+            "compra": 5.6275,
+            "venda": 5.6288,
+            "maxima": 5.6342,
+            "minima": 5.6012
+          },
+          {
+            "data": "09/10/2026",
+            "compra": 5.5831,
+            "venda": 5.5851,
+            "maxima": 5.6356,
+            "minima": 5.5688
+          },
+          {
+            "data": "11/10/2026",
+            "compra": 5.5776,
+            "venda": 5.5796,
+            "maxima": 5.5831,
+            "minima": 5.5776
+          },
+          {
+            "data": "12/10/2026",
+            "compra": 5.5633,
+            "venda": 5.5653,
+            "maxima": 5.5978,
+            "minima": 5.5593
+          },
+          {
+            "data": "13/10/2026",
+            "compra": 5.6299,
+            "venda": 5.6319,
+            "maxima": 5.6301,
+            "minima": 5.5621
+          },
+          {
+            "data": "14/10/2026",
+            "compra": 5.6444,
+            "venda": 5.6458,
+            "maxima": 5.6451,
+            "minima": 5.5956
+          },
+          {
+            "data": "15/10/2026",
+            "compra": 5.7153,
+            "venda": 5.7173,
+            "maxima": 5.7196,
+            "minima": 5.6387
+          },
+          {
+            "data": "16/10/2026",
+            "compra": 5.7041,
+            "venda": 5.7061,
+            "maxima": 5.7429,
+            "minima": 5.6881
+          },
+          {
+            "data": "18/10/2026",
+            "compra": 5.6959,
+            "venda": 5.6979,
+            "maxima": 5.7041,
+            "minima": 5.6776
+          },
+          {
+            "data": "19/10/2026",
+            "compra": 5.6483,
+            "venda": 5.6503,
+            "maxima": 5.698,
+            "minima": 5.6394
+          },
+          {
+            "data": "20/10/2026",
+            "compra": 5.6392,
+            "venda": 5.6412,
+            "maxima": 5.665,
+            "minima": 5.6201
+          },
+          {
+            "data": "21/10/2026",
+            "compra": 5.6436,
+            "venda": 5.6456,
+            "maxima": 5.6637,
+            "minima": 5.6295
+          },
+          {
+            "data": "22/10/2026",
+            "compra": 5.6678,
+            "venda": 5.6698,
+            "maxima": 5.6688,
+            "minima": 5.6249
+          },
+          {
+            "data": "23/10/2026",
+            "compra": 5.5617,
+            "venda": 5.5637,
+            "maxima": 5.6703,
+            "minima": 5.5617
+          },
+          {
+            "data": "25/10/2026",
+            "compra": 5.6144,
+            "venda": 5.6164,
+            "maxima": 5.6144,
+            "minima": 5.5617
+          },
+          {
+            "data": "26/10/2026",
+            "compra": 6.0044,
+            "venda": 6.0064,
+            "maxima": 6.119,
+            "minima": 5.5687
+          },
+          {
+            "data": "27/10/2026",
+            "compra": 5.954,
+            "venda": 5.956,
+            "maxima": 6.0424,
+            "minima": 5.9194
+          },
+          {
+            "data": "28/10/2026",
+            "compra": 5.9654,
+            "venda": 5.9674,
+            "maxima": 6.0082,
+            "minima": 5.916
+          },
+          {
+            "data": "29/10/2026",
+            "compra": 6.0211,
+            "venda": 6.0231,
+            "maxima": 6.0585,
+            "minima": 5.9464
+          },
+          {
+            "data": "30/10/2026",
+            "compra": 6.0846,
+            "venda": 6.0866,
+            "maxima": 6.0961,
+            "minima": 6.0076
+          },
+          {
+            "data": "01/11/2026",
+            "compra": 6.0117,
+            "venda": 6.0137,
+            "maxima": 6.0846,
+            "minima": 6.0117
+          },
+          {
+            "data": "02/11/2026",
+            "compra": 6.0852,
+            "venda": 6.0872,
+            "maxima": 6.113,
+            "minima": 6.0117
+          },
+          {
+            "data": "03/11/2026",
+            "compra": 6.1487,
+            "venda": 6.1507,
+            "maxima": 6.1615,
+            "minima": 6.0767
+          },
+          {
+            "data": "04/11/2026",
+            "compra": 6.1334,
+            "venda": 6.1354,
+            "maxima": 6.1817,
+            "minima": 6.1166
+          },
+          {
+            "data": "05/11/2026",
+            "compra": 6.1109,
+            "venda": 6.1129,
+            "maxima": 6.1526,
+            "minima": 6.1106
+          }
+        ]
+      },
+      "metricas": {
+        "periodo_solicitado_dias": 30,
+        "pontos_na_serie": 30,
+        "data_inicial": "02/10/2026",
+        "data_final": "05/11/2026",
+        "cotacao_inicial_compra": 5.8702,
+        "cotacao_atual_compra": 6.1109,
+        "cotacao_atual_venda": 6.1129,
+        "spread_percentual": 0.0327,
+        "variacao_periodo_percentual": 4.1,
+        "maxima_periodo": 6.1817,
+        "minima_periodo": 5.5457,
+        "media_compra_periodo": 5.7872,
+        "volatilidade_diaria_percentual": 1.74,
+        "tendencia": "alta",
+        "conversao": {
+          "valor_origem": 12500,
+          "moeda_origem": "EUR",
+          "cotacao_utilizada": 6.1129,
+          "criterio": "cotação de venda (ask), referência para quem precisa comprar a moeda estrangeira",
+          "valor_em_brl": 76411.25
+        }
+      },
+      "sinais_regras": [
+        {
+          "severidade": "alta",
+          "regra": "risco_cambial_alto",
+          "descricao": "Oscilação elevada no período (volatilidade diária 1.74%, variação 4.1%)."
+        }
+      ]
+    },
+    "metadados": {
+      "origem": "api",
+      "modelo": "gemini-2.5-flash-lite",
+      "raciocinio_classificador": "Pedido de conversão de valor em euro com histórico de 30 dias.",
+      "confianca_classificacao": 0.97,
+      "guardrails_aplicados": [],
+      "erro_llm": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1448,
+          "saida": 80
+        },
+        "analista": {
+          "entrada": 2334,
+          "saida": 650
+        }
+      },
+      "latencia_ms": 3628,
+      "recebido_em": "2026-11-05T13:48:55.447Z",
+      "respondido_em": "2026-11-05T13:48:59.075Z"
+    }
+  }
+}

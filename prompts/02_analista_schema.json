@@ -1,0 +1,26 @@
+{
+  "type": "OBJECT",
+  "properties": {
+    "titulo": { "type": "STRING" },
+    "resumo_executivo": { "type": "STRING" },
+    "insights": {
+      "type": "ARRAY",
+      "items": {
+        "type": "OBJECT",
+        "properties": {
+          "categoria": { "type": "STRING" },
+          "descricao": { "type": "STRING" },
+          "impacto": { "type": "STRING", "enum": ["positivo", "neutro", "atencao", "critico"] }
+        },
+        "required": ["categoria", "descricao", "impacto"],
+        "propertyOrdering": ["categoria", "descricao", "impacto"]
+      }
+    },
+    "alertas": { "type": "ARRAY", "items": { "type": "STRING" } },
+    "nivel_risco": { "type": "STRING", "enum": ["baixo", "moderado", "alto"] },
+    "recomendacao": { "type": "STRING" },
+    "resposta_formatada": { "type": "STRING" }
+  },
+  "required": ["titulo", "resumo_executivo", "insights", "alertas", "nivel_risco", "recomendacao", "resposta_formatada"],
+  "propertyOrdering": ["titulo", "resumo_executivo", "insights", "alertas", "nivel_risco", "recomendacao", "resposta_formatada"]
+}

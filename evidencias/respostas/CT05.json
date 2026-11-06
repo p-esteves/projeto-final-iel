@@ -1,0 +1,38 @@
+{
+  "caso": {
+    "id": "CT05",
+    "descricao": "CNPJ com dígito verificador inválido (validação determinística)",
+    "mensagem": "Consulta o CNPJ 12.345.678/0001-00",
+    "esperado": {
+      "http_status": 422,
+      "status": "erro",
+      "intencao": "consulta_cnpj"
+    }
+  },
+  "http_status": 422,
+  "latencia_ms": 1321,
+  "resposta": {
+    "status": "erro",
+    "request_id": "req_mw3lq9xi_pawmqp",
+    "tipo": "parametro_invalido",
+    "intencao": "consulta_cnpj",
+    "parametros": null,
+    "mensagem": "O CNPJ informado (12345678000100) não é válido: ele deve ter 14 caracteres e dígitos verificadores corretos. Confira o número e envie novamente.",
+    "output": "O CNPJ informado (12345678000100) não é válido: ele deve ter 14 caracteres e dígitos verificadores corretos. Confira o número e envie novamente.",
+    "metadados": {
+      "origem": "api",
+      "raciocinio_classificador": "Usuário solicita consulta de CNPJ e informou o número completo.",
+      "confianca_classificacao": 0.98,
+      "detalhe_tecnico": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1447,
+          "saida": 112
+        },
+        "analista": null
+      },
+      "latencia_ms": 1154,
+      "respondido_em": "2026-11-05T13:49:02.408Z"
+    }
+  }
+}

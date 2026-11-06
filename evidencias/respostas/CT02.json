@@ -1,0 +1,168 @@
+{
+  "caso": {
+    "id": "CT02",
+    "descricao": "Consulta de CNPJ sem pontuação, linguagem informal",
+    "mensagem": "me fala tudo sobre a empresa 33000167000101",
+    "esperado": {
+      "http_status": 200,
+      "status": "sucesso",
+      "intencao": "consulta_cnpj"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 4313,
+  "resposta": {
+    "status": "sucesso",
+    "request_id": "req_mw3lpvwf_0r19ax",
+    "intencao": "consulta_cnpj",
+    "parametros": {
+      "cnpj": "33000167000101"
+    },
+    "resposta": {
+      "titulo": "Consulta CNPJ: PETROBRAS - EDISE (33000167000101)",
+      "resumo_executivo": "A PETROLEO BRASILEIRO S A PETROBRAS, com nome fantasia PETROBRAS - EDISE, está com a situação cadastral ATIVA desde 03/11/2005. A empresa possui 60.1 anos de atividade, com foco principal em extração de petróleo e gás natural.",
+      "insights": [
+        {
+          "categoria": "Situação Cadastral",
+          "descricao": "A empresa encontra-se ATIVA, com a situação cadastral regularizada desde 03/11/2005.",
+          "impacto": "positivo"
+        },
+        {
+          "categoria": "Tempo de Atividade",
+          "descricao": "Com 60.1 anos de operação, a empresa demonstra grande maturidade e consolidação no mercado.",
+          "impacto": "positivo"
+        },
+        {
+          "categoria": "Natureza Jurídica",
+          "descricao": "A natureza jurídica é de Sociedade de Economia Mista, indicando participação governamental.",
+          "impacto": "neutro"
+        },
+        {
+          "categoria": "Capital Social",
+          "descricao": "O capital social é de R$ 205.431.960.000,00, demonstrando robustez financeira.",
+          "impacto": "positivo"
+        },
+        {
+          "categoria": "Atividade Principal",
+          "descricao": "O foco principal é na extração de petróleo e gás natural (CNAE 600001), com diversas atividades secundárias relacionadas ao refino e distribuição.",
+          "impacto": "neutro"
+        }
+      ],
+      "alertas": [],
+      "nivel_risco": "baixo",
+      "recomendacao": "O cadastro/homologação pode seguir. Recomenda-se solicitar as certidões negativas de débitos federais, estaduais e municipais para garantir a regularidade fiscal.",
+      "resposta_formatada": "**Consulta CNPJ: PETROBRAS - EDISE (33000167000101)**\n\nA PETROLEO BRASILEIRO S A PETROBRAS, com nome fantasia PETROBRAS - EDISE, está com a situação cadastral ATIVA desde 03/11/2005. A empresa possui 60.1 anos de atividade, com foco principal em extração de petróleo e gás natural.\n\n**Principais Pontos:**\n*   **Situação Cadastral:** ATIVA.\n*   **Tempo de Atividade:** 60.1 anos.\n*   **Natureza Jurídica:** Sociedade de Economia Mista.\n*   **Capital Social:** R$ 205.431.960.000,00.\n*   **Atividade Principal:** Extração de petróleo e gás natural.\n\n**Recomendação:** O cadastro/homologação pode seguir. Recomenda-se solicitar as certidões negativas de débitos federais, estaduais e municipais para garantir a regularidade fiscal."
+    },
+    "output": "**Consulta CNPJ: PETROBRAS - EDISE (33000167000101)**\n\nA PETROLEO BRASILEIRO S A PETROBRAS, com nome fantasia PETROBRAS - EDISE, está com a situação cadastral ATIVA desde 03/11/2005. A empresa possui 60.1 anos de atividade, com foco principal em extração de petróleo e gás natural.\n\n**Principais Pontos:**\n*   **Situação Cadastral:** ATIVA.\n*   **Tempo de Atividade:** 60.1 anos.\n*   **Natureza Jurídica:** Sociedade de Economia Mista.\n*   **Capital Social:** R$ 205.431.960.000,00.\n*   **Atividade Principal:** Extração de petróleo e gás natural.\n\n**Recomendação:** O cadastro/homologação pode seguir. Recomenda-se solicitar as certidões negativas de débitos federais, estaduais e municipais para garantir a regularidade fiscal.",
+    "dados_fonte": {
+      "fonte": "BrasilAPI - Receita Federal",
+      "url": "https://brasilapi.com.br/api/cnpj/v1/33000167000101",
+      "dados": {
+        "cnpj": "33.000.167/0001-01",
+        "razao_social": "PETROLEO BRASILEIRO S A PETROBRAS",
+        "nome_fantasia": "PETROBRAS - EDISE",
+        "matriz_filial": "MATRIZ",
+        "situacao_cadastral": "ATIVA",
+        "data_situacao_cadastral": "03/11/2005",
+        "motivo_situacao": "SEM MOTIVO",
+        "situacao_especial": null,
+        "data_inicio_atividade": "28/09/1966",
+        "porte": "DEMAIS",
+        "natureza_juridica": "Sociedade de Economia Mista",
+        "capital_social": 205431960000,
+        "atividade_principal": {
+          "cnae": 600001,
+          "descricao": "Extração de petróleo e gás natural"
+        },
+        "atividades_secundarias": [
+          {
+            "cnae": 1921700,
+            "descricao": "Fabricação de produtos do refino de petróleo"
+          },
+          {
+            "cnae": 3520401,
+            "descricao": "Produção de gás; processamento de gás natural"
+          },
+          {
+            "cnae": 3520402,
+            "descricao": "Distribuição de combustíveis gasosos por redes urbanas"
+          },
+          {
+            "cnae": 4681801,
+            "descricao": "Comércio atacadista de álcool carburante, biodiesel, gasolina e demais derivados de petróleo, exceto lubrificantes, não realizado por transportador re"
+          },
+          {
+            "cnae": 8630599,
+            "descricao": "Atividades de atenção ambulatorial não especificadas anteriormente"
+          }
+        ],
+        "localizacao": {
+          "municipio": "RIO DE JANEIRO",
+          "uf": "RJ",
+          "bairro": "CENTRO"
+        },
+        "opcao_simples_nacional": null,
+        "opcao_mei": null,
+        "regime_tributario_mais_recente": {
+          "ano": 2024,
+          "forma": "LUCRO REAL"
+        },
+        "socios_principais": [
+          {
+            "nome": "ANGELICA GARCIA COBAS LAUREANO",
+            "qualificacao": "Diretor",
+            "desde": "29/07/2025"
+          },
+          {
+            "nome": "CLARICE COPPETTI",
+            "qualificacao": "Diretor",
+            "desde": "17/04/2023"
+          },
+          {
+            "nome": "FERNANDO SABBI MELGAREJO",
+            "qualificacao": "Diretor",
+            "desde": "17/07/2024"
+          },
+          {
+            "nome": "MAGDA MARIA DE REGINA CHAMBRIARD",
+            "qualificacao": "Presidente",
+            "desde": "07/06/2024"
+          },
+          {
+            "nome": "RENATA FARIA RODRIGUES BARUZZI LOPES",
+            "qualificacao": "Diretor",
+            "desde": "17/07/2024"
+          }
+        ]
+      },
+      "metricas": {
+        "idade_empresa_anos": 60.1,
+        "anos_na_situacao_atual": 21,
+        "total_socios": 8,
+        "total_atividades_secundarias": 5
+      },
+      "sinais_regras": []
+    },
+    "metadados": {
+      "origem": "api",
+      "modelo": "gemini-2.5-flash-lite",
+      "raciocinio_classificador": "Usuário pede dados de empresa e informou o CNPJ.",
+      "confianca_classificacao": 0.98,
+      "guardrails_aplicados": [],
+      "erro_llm": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1445,
+          "saida": 111
+        },
+        "analista": {
+          "entrada": 2069,
+          "saida": 742
+        }
+      },
+      "latencia_ms": 4006,
+      "recebido_em": "2026-11-05T13:48:43.071Z",
+      "respondido_em": "2026-11-05T13:48:47.077Z"
+    }
+  }
+}

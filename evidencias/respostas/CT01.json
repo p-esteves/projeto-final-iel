@@ -1,0 +1,147 @@
+{
+  "caso": {
+    "id": "CT01",
+    "descricao": "Due diligence de fornecedor com CNPJ formatado (caminho feliz)",
+    "mensagem": "Vamos fechar contrato com um fornecedor. Pode avaliar o CNPJ 00.000.000/0001-91 pra mim?",
+    "esperado": {
+      "http_status": 200,
+      "status": "sucesso",
+      "intencao": "consulta_cnpj"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 4566,
+  "resposta": {
+    "status": "sucesso",
+    "request_id": "req_mw3lpqv2_wbi7dq",
+    "intencao": "consulta_cnpj",
+    "parametros": {
+      "cnpj": "00000000000191"
+    },
+    "resposta": {
+      "titulo": "Análise CNPJ Banco do Brasil S.A.",
+      "resumo_executivo": "O CNPJ 00.000.000/0001-91, referente ao BANCO DO BRASIL SA (DIRECAO GERAL), encontra-se ATIVA desde 03/11/2005. A empresa possui natureza jurídica de Sociedade de Economia Mista e está no regime de Lucro Real. O capital social é de R$ 120.000.000.000,00.",
+      "insights": [
+        {
+          "categoria": "Situação Cadastral",
+          "descricao": "A empresa está com a situação cadastral ATIVA, indicando regularidade perante a Receita Federal.",
+          "impacto": "positivo"
+        },
+        {
+          "categoria": "Tempo de Atividade",
+          "descricao": "A empresa iniciou suas atividades em 01/08/1966, demonstrando longa experiência no mercado.",
+          "impacto": "positivo"
+        },
+        {
+          "categoria": "Natureza Jurídica e Porte",
+          "descricao": "Sendo uma Sociedade de Economia Mista com capital social elevado, o Banco do Brasil S.A. possui grande porte e relevância.",
+          "impacto": "neutro"
+        },
+        {
+          "categoria": "Regime Tributário",
+          "descricao": "O regime tributário atual é Lucro Real, o que pode indicar maior complexidade fiscal.",
+          "impacto": "neutro"
+        }
+      ],
+      "alertas": [],
+      "nivel_risco": "baixo",
+      "recomendacao": "O cadastro do fornecedor pode seguir. Recomenda-se solicitar as certidões negativas de débitos federais e estaduais para garantir a regularidade fiscal.",
+      "resposta_formatada": "**Análise CNPJ: BANCO DO BRASIL SA**\n\nO CNPJ 00.000.000/0001-91, BANCO DO BRASIL SA, está ATIVO desde 03/11/2005. A empresa opera como Sociedade de Economia Mista, com capital social de R$ 120.000.000.000,00 e atua no ramo de Bancos múltiplos.\n\n**Principais Pontos:**\n* **Situação Cadastral:** ATIVA.\n* **Tempo de Atividade:** Iniciou em 01/08/1966, demonstrando solidez.\n* **Regime Tributário:** Lucro Real.\n\n**Recomendação:** O cadastro pode prosseguir. Solicite certidões negativas de débitos federais e estaduais para maior segurança."
+    },
+    "output": "**Análise CNPJ: BANCO DO BRASIL SA**\n\nO CNPJ 00.000.000/0001-91, BANCO DO BRASIL SA, está ATIVO desde 03/11/2005. A empresa opera como Sociedade de Economia Mista, com capital social de R$ 120.000.000.000,00 e atua no ramo de Bancos múltiplos.\n\n**Principais Pontos:**\n* **Situação Cadastral:** ATIVA.\n* **Tempo de Atividade:** Iniciou em 01/08/1966, demonstrando solidez.\n* **Regime Tributário:** Lucro Real.\n\n**Recomendação:** O cadastro pode prosseguir. Solicite certidões negativas de débitos federais e estaduais para maior segurança.",
+    "dados_fonte": {
+      "fonte": "BrasilAPI - Receita Federal",
+      "url": "https://brasilapi.com.br/api/cnpj/v1/00000000000191",
+      "dados": {
+        "cnpj": "00.000.000/0001-91",
+        "razao_social": "BANCO DO BRASIL SA",
+        "nome_fantasia": "DIRECAO GERAL",
+        "matriz_filial": "MATRIZ",
+        "situacao_cadastral": "ATIVA",
+        "data_situacao_cadastral": "03/11/2005",
+        "motivo_situacao": "SEM MOTIVO",
+        "situacao_especial": null,
+        "data_inicio_atividade": "01/08/1966",
+        "porte": "DEMAIS",
+        "natureza_juridica": "Sociedade de Economia Mista",
+        "capital_social": 120000000000,
+        "atividade_principal": {
+          "cnae": 6422100,
+          "descricao": "Bancos múltiplos, com carteira comercial"
+        },
+        "atividades_secundarias": [
+          {
+            "cnae": 6499999,
+            "descricao": "Outras atividades de serviços financeiros não especificadas anteriormente"
+          }
+        ],
+        "localizacao": {
+          "municipio": "BRASILIA",
+          "uf": "DF",
+          "bairro": "ASA NORTE"
+        },
+        "opcao_simples_nacional": false,
+        "opcao_mei": false,
+        "regime_tributario_mais_recente": {
+          "ano": 2024,
+          "forma": "LUCRO REAL"
+        },
+        "socios_principais": [
+          {
+            "nome": "ALAN CARLOS GUEDES DE OLIVEIRA",
+            "qualificacao": "Diretor",
+            "desde": "17/05/2023"
+          },
+          {
+            "nome": "ALBERTO MARTINHAGO VIEIRA",
+            "qualificacao": "Diretor",
+            "desde": "20/07/2023"
+          },
+          {
+            "nome": "ALEXANDRE BOCCHETTI NUNES",
+            "qualificacao": "Diretor",
+            "desde": "28/08/2025"
+          },
+          {
+            "nome": "ANA CRISTINA ROSA GARCIA",
+            "qualificacao": "Diretor",
+            "desde": "22/03/2023"
+          },
+          {
+            "nome": "ANELIZE LENZI RUAS DE ALMEIDA",
+            "qualificacao": "Conselheiro de Administração",
+            "desde": "16/05/2023"
+          }
+        ]
+      },
+      "metricas": {
+        "idade_empresa_anos": 60.3,
+        "anos_na_situacao_atual": 21,
+        "total_socios": 41,
+        "total_atividades_secundarias": 1
+      },
+      "sinais_regras": []
+    },
+    "metadados": {
+      "origem": "api",
+      "modelo": "gemini-2.5-flash-lite",
+      "raciocinio_classificador": "Usuário pede avaliação de fornecedor e informou o CNPJ.",
+      "confianca_classificacao": 0.98,
+      "guardrails_aplicados": [],
+      "erro_llm": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1460,
+          "saida": 112
+        },
+        "analista": {
+          "entrada": 1906,
+          "saida": 651
+        }
+      },
+      "latencia_ms": 4215,
+      "recebido_em": "2026-11-05T13:48:36.542Z",
+      "respondido_em": "2026-11-05T13:48:40.757Z"
+    }
+  }
+}

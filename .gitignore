@@ -1,0 +1,14 @@
+# Segredos
+.env
+
+# Pacotes locais
+*.zip
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Sistema
+.DS_Store
+Thumbs.db

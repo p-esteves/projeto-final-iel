@@ -1,0 +1,221 @@
+{
+  "caso": {
+    "id": "CT03",
+    "descricao": "Tendência do dólar em período específico",
+    "mensagem": "Como o dólar se comportou nos últimos 15 dias? Preciso decidir quando fechar o câmbio de uma importação.",
+    "esperado": {
+      "http_status": 200,
+      "status": "sucesso",
+      "intencao": "cotacao_moeda"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 4078,
+  "resposta": {
+    "status": "sucesso",
+    "request_id": "req_mw3lq0m5_7o5cea",
+    "intencao": "cotacao_moeda",
+    "parametros": {
+      "moeda": "USD",
+      "periodo_dias": 15,
+      "valor_conversao": null
+    },
+    "resposta": {
+      "titulo": "Dólar em alta com volatilidade elevada nos últimos 15 dias",
+      "resumo_executivo": "O dólar apresentou uma tendência de alta nos últimos 15 dias, com uma variação de 7,52%. A cotação atual de venda é de R$ 5,4456. A volatilidade diária de 2,31% indica um cenário de risco cambial.",
+      "insights": [
+        {
+          "categoria": "Câmbio",
+          "descricao": "A cotação do dólar apresentou forte valorização, com variação de 7,52% no período de 15 dias.",
+          "impacto": "critico"
+        },
+        {
+          "categoria": "Volatilidade",
+          "descricao": "A volatilidade diária de 2,31% é considerada alta, indicando instabilidade e imprevisibilidade na cotação.",
+          "impacto": "critico"
+        },
+        {
+          "categoria": "Risco Cambial",
+          "descricao": "A tendência de alta e a alta volatilidade configuram um risco cambial elevado para operações de importação.",
+          "impacto": "critico"
+        },
+        {
+          "categoria": "Operação de Importação",
+          "descricao": "A cotação atual de venda é de R$ 5,4456, sendo importante considerar o impacto dessa variação no custo final da importação.",
+          "impacto": "atencao"
+        }
+      ],
+      "alertas": [
+        "Oscilação elevada no período (volatilidade diária 2.31%, variação 7.52%)."
+      ],
+      "nivel_risco": "alto",
+      "recomendacao": "Recomenda-se travar o câmbio o quanto antes para mitigar os riscos da volatilidade e da tendência de alta observada.",
+      "resposta_formatada": "**Dólar em alta com volatilidade elevada nos últimos 15 dias**\n\nO dólar apresentou uma tendência de alta nos últimos 15 dias, com uma variação de 7,52%. A cotação atual de venda é de R$ 5,4456. A volatilidade diária de 2,31% indica um cenário de risco cambial.\n\n**Principais pontos:**\n* **Valorização:** Câmbio subiu 7,52% em 15 dias.\n* **Instabilidade:** Volatilidade diária de 2,31% é alta.\n* **Risco:** Tendência de alta e volatilidade configuram risco cambial elevado.\n\n**Recomendação:** Trave o câmbio o quanto antes para mitigar os riscos da volatilidade e da tendência de alta observada."
+    },
+    "output": "**Dólar em alta com volatilidade elevada nos últimos 15 dias**\n\nO dólar apresentou uma tendência de alta nos últimos 15 dias, com uma variação de 7,52%. A cotação atual de venda é de R$ 5,4456. A volatilidade diária de 2,31% indica um cenário de risco cambial.\n\n**Principais pontos:**\n* **Valorização:** Câmbio subiu 7,52% em 15 dias.\n* **Instabilidade:** Volatilidade diária de 2,31% é alta.\n* **Risco:** Tendência de alta e volatilidade configuram risco cambial elevado.\n\n**Recomendação:** Trave o câmbio o quanto antes para mitigar os riscos da volatilidade e da tendência de alta observada.",
+    "dados_fonte": {
+      "fonte": "AwesomeAPI - Economia",
+      "url": "https://economia.awesomeapi.com.br/json/daily/USD-BRL/15",
+      "dados": {
+        "par": "USD/BRL",
+        "nome": "Dólar Americano/Real Brasileiro",
+        "atualizado_em": "2026-11-05 10:17:54",
+        "cotacao_atual": {
+          "compra": 5.4452,
+          "venda": 5.4456
+        },
+        "serie_historica": [
+          {
+            "data": "18/10/2026",
+            "compra": 5.0645,
+            "venda": 5.0649,
+            "maxima": 5.0645,
+            "minima": 5.0622
+          },
+          {
+            "data": "19/10/2026",
+            "compra": 5.0402,
+            "venda": 5.0405,
+            "maxima": 5.065,
+            "minima": 5.03
+          },
+          {
+            "data": "20/10/2026",
+            "compra": 5.0238,
+            "venda": 5.0242,
+            "maxima": 5.0411,
+            "minima": 5.0042
+          },
+          {
+            "data": "21/10/2026",
+            "compra": 5.0236,
+            "venda": 5.0239,
+            "maxima": 5.0425,
+            "minima": 5.0125
+          },
+          {
+            "data": "22/10/2026",
+            "compra": 5.0523,
+            "venda": 5.0527,
+            "maxima": 5.0533,
+            "minima": 5.021
+          },
+          {
+            "data": "23/10/2026",
+            "compra": 4.9648,
+            "venda": 4.966,
+            "maxima": 5.0543,
+            "minima": 4.9636
+          },
+          {
+            "data": "26/10/2026",
+            "compra": 5.3712,
+            "venda": 5.3716,
+            "maxima": 5.604,
+            "minima": 4.9648
+          },
+          {
+            "data": "27/10/2026",
+            "compra": 5.3514,
+            "venda": 5.3519,
+            "maxima": 5.4191,
+            "minima": 5.3077
+          },
+          {
+            "data": "28/10/2026",
+            "compra": 5.3462,
+            "venda": 5.3466,
+            "maxima": 5.3982,
+            "minima": 5.3117
+          },
+          {
+            "data": "29/10/2026",
+            "compra": 5.3849,
+            "venda": 5.3853,
+            "maxima": 5.427,
+            "minima": 5.3433
+          },
+          {
+            "data": "30/10/2026",
+            "compra": 5.4397,
+            "venda": 5.4401,
+            "maxima": 5.4618,
+            "minima": 5.3793
+          },
+          {
+            "data": "02/11/2026",
+            "compra": 5.4366,
+            "venda": 5.438,
+            "maxima": 5.4406,
+            "minima": 5.4366
+          },
+          {
+            "data": "03/11/2026",
+            "compra": 5.4883,
+            "venda": 5.4888,
+            "maxima": 5.512,
+            "minima": 5.4366
+          },
+          {
+            "data": "04/11/2026",
+            "compra": 5.4597,
+            "venda": 5.4605,
+            "maxima": 5.4972,
+            "minima": 5.4497
+          },
+          {
+            "data": "05/11/2026",
+            "compra": 5.4452,
+            "venda": 5.4456,
+            "maxima": 5.4734,
+            "minima": 5.4412
+          }
+        ]
+      },
+      "metricas": {
+        "periodo_solicitado_dias": 15,
+        "pontos_na_serie": 15,
+        "data_inicial": "18/10/2026",
+        "data_final": "05/11/2026",
+        "cotacao_inicial_compra": 5.0645,
+        "cotacao_atual_compra": 5.4452,
+        "cotacao_atual_venda": 5.4456,
+        "spread_percentual": 0.0073,
+        "variacao_periodo_percentual": 7.52,
+        "maxima_periodo": 5.604,
+        "minima_periodo": 4.9636,
+        "media_compra_periodo": 5.2595,
+        "volatilidade_diaria_percentual": 2.31,
+        "tendencia": "alta"
+      },
+      "sinais_regras": [
+        {
+          "severidade": "alta",
+          "regra": "risco_cambial_alto",
+          "descricao": "Oscilação elevada no período (volatilidade diária 2.31%, variação 7.52%)."
+        }
+      ]
+    },
+    "metadados": {
+      "origem": "api",
+      "modelo": "gemini-2.5-flash-lite",
+      "raciocinio_classificador": "Usuário pede cotação histórica do dólar para 15 dias, com contexto de importação.",
+      "confianca_classificacao": 0.98,
+      "guardrails_aplicados": [],
+      "erro_llm": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1453,
+          "saida": 111
+        },
+        "analista": {
+          "entrada": 1918,
+          "saida": 644
+        }
+      },
+      "latencia_ms": 3982,
+      "recebido_em": "2026-11-05T13:48:49.181Z",
+      "respondido_em": "2026-11-05T13:48:53.163Z"
+    }
+  }
+}

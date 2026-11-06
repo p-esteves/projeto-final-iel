@@ -1,0 +1,38 @@
+{
+  "caso": {
+    "id": "CT08",
+    "descricao": "Pergunta fora do escopo",
+    "mensagem": "Me passa uma receita de bolo de cenoura",
+    "esperado": {
+      "http_status": 200,
+      "status": "sem_consulta",
+      "intencao": "fora_escopo"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 1296,
+  "resposta": {
+    "status": "sem_consulta",
+    "request_id": "req_mw3lqi7b_f373ee",
+    "tipo": "fora_escopo",
+    "intencao": "fora_escopo",
+    "parametros": null,
+    "mensagem": "Essa solicitação está fora do meu escopo. Posso ajudar com duas consultas: **(1) análise cadastral de empresas pelo CNPJ** (situação na Receita Federal, tempo de atividade, porte, sócios e sinais de risco) e **(2) cotação de moedas estrangeiras em reais** (cotação atual, tendência, volatilidade e conversão de valores).",
+    "output": "Essa solicitação está fora do meu escopo. Posso ajudar com duas consultas: **(1) análise cadastral de empresas pelo CNPJ** (situação na Receita Federal, tempo de atividade, porte, sócios e sinais de risco) e **(2) cotação de moedas estrangeiras em reais** (cotação atual, tendência, volatilidade e conversão de valores).\n\n**Exemplos do que você pode perguntar:**\n- Analise o fornecedor de CNPJ 00.000.000/0001-91\n- Como o dólar se comportou nos últimos 15 dias?\n- Quanto ficam 3.000 euros em reais hoje?",
+    "metadados": {
+      "origem": "api",
+      "raciocinio_classificador": "O usuário solicitou uma receita de bolo, que está fora do escopo de compras, financeiro e comércio exterior.",
+      "confianca_classificacao": 0.99,
+      "detalhe_tecnico": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1433,
+          "saida": 109
+        },
+        "analista": null
+      },
+      "latencia_ms": 1204,
+      "respondido_em": "2026-11-05T13:49:13.179Z"
+    }
+  }
+}

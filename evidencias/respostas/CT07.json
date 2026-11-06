@@ -1,0 +1,38 @@
+{
+  "caso": {
+    "id": "CT07",
+    "descricao": "Moeda não suportada",
+    "mensagem": "Qual a cotação do rublo russo hoje?",
+    "esperado": {
+      "http_status": 422,
+      "status": "erro",
+      "intencao": "cotacao_moeda"
+    }
+  },
+  "http_status": 422,
+  "latencia_ms": 1720,
+  "resposta": {
+    "status": "erro",
+    "request_id": "req_mw3lqfjf_xnduwv",
+    "tipo": "parametro_invalido",
+    "intencao": "cotacao_moeda",
+    "parametros": null,
+    "mensagem": "A moeda \"RUB\" não é suportada. Moedas disponíveis: USD, EUR, GBP, ARS, JPY, CNY, CHF, CAD, AUD, BTC.",
+    "output": "A moeda \"RUB\" não é suportada. Moedas disponíveis: USD, EUR, GBP, ARS, JPY, CNY, CHF, CAD, AUD, BTC.",
+    "metadados": {
+      "origem": "api",
+      "raciocinio_classificador": "Usuário pede cotação de moeda estrangeira, informando a moeda e o período.",
+      "confianca_classificacao": 0.95,
+      "detalhe_tecnico": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1435,
+          "saida": 107
+        },
+        "analista": null
+      },
+      "latencia_ms": 1358,
+      "respondido_em": "2026-11-05T13:49:09.881Z"
+    }
+  }
+}

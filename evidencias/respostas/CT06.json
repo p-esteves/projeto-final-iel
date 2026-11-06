@@ -1,0 +1,38 @@
+{
+  "caso": {
+    "id": "CT06",
+    "descricao": "Pedido no escopo, mas sem parâmetro obrigatório (esclarecimento)",
+    "mensagem": "Quero saber se a empresa Petrobras é confiável como cliente",
+    "esperado": {
+      "http_status": 200,
+      "status": "sem_consulta",
+      "intencao": "esclarecimento_necessario"
+    }
+  },
+  "http_status": 200,
+  "latencia_ms": 1749,
+  "resposta": {
+    "status": "sem_consulta",
+    "request_id": "req_mw3lqcmg_ettt5m",
+    "tipo": "esclarecimento",
+    "intencao": "esclarecimento_necessario",
+    "parametros": null,
+    "mensagem": "Para consultar os dados na Receita Federal, você pode informar o CNPJ da Petrobras (14 dígitos)?",
+    "output": "Para consultar os dados na Receita Federal, você pode informar o CNPJ da Petrobras (14 dígitos)?\n\n**Exemplos do que você pode perguntar:**\n- Analise o fornecedor de CNPJ 00.000.000/0001-91\n- Como o dólar se comportou nos últimos 15 dias?\n- Quanto ficam 3.000 euros em reais hoje?",
+    "metadados": {
+      "origem": "api",
+      "raciocinio_classificador": "Usuário pede análise de confiabilidade de cliente, mas não informou o CNPJ.",
+      "confianca_classificacao": 0.95,
+      "detalhe_tecnico": null,
+      "tokens": {
+        "classificador": {
+          "entrada": 1437,
+          "saida": 128
+        },
+        "analista": null
+      },
+      "latencia_ms": 1411,
+      "respondido_em": "2026-11-05T13:49:06.155Z"
+    }
+  }
+}

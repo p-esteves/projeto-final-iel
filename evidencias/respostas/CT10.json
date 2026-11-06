@@ -1,0 +1,32 @@
+{
+  "caso": {
+    "id": "CT10",
+    "descricao": "Entrada vazia (validação antes do LLM)",
+    "mensagem": "   ",
+    "esperado": {
+      "http_status": 400,
+      "status": "erro",
+      "intencao": null
+    }
+  },
+  "http_status": 400,
+  "latencia_ms": 217,
+  "resposta": {
+    "status": "erro",
+    "request_id": "req_mw3lqnke_y0cuk3",
+    "tipo": "entrada_invalida",
+    "intencao": null,
+    "parametros": null,
+    "mensagem": "O campo \"mensagem\" é obrigatório e deve conter texto.",
+    "output": "O campo \"mensagem\" é obrigatório e deve conter texto.",
+    "metadados": {
+      "origem": "api",
+      "raciocinio_classificador": null,
+      "confianca_classificacao": null,
+      "detalhe_tecnico": null,
+      "tokens": null,
+      "latencia_ms": 48,
+      "respondido_em": "2026-11-05T13:49:18.974Z"
+    }
+  }
+}

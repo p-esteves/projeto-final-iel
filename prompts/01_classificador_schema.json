@@ -1,0 +1,43 @@
+{
+  "type": "OBJECT",
+  "properties": {
+    "raciocinio": {
+      "type": "STRING",
+      "description": "Frase curta (até 25 palavras) justificando a classificação."
+    },
+    "intencao": {
+      "type": "STRING",
+      "enum": ["consulta_cnpj", "cotacao_moeda", "esclarecimento_necessario", "fora_escopo"]
+    },
+    "cnpj": {
+      "type": "STRING",
+      "nullable": true,
+      "description": "Somente dígitos do CNPJ informado."
+    },
+    "moeda": {
+      "type": "STRING",
+      "nullable": true,
+      "description": "Código ISO 4217 da moeda (ex.: USD)."
+    },
+    "periodo_dias": {
+      "type": "INTEGER",
+      "nullable": true,
+      "description": "Dias de histórico desejados (1 a 30)."
+    },
+    "valor_conversao": {
+      "type": "NUMBER",
+      "nullable": true,
+      "description": "Valor em moeda estrangeira a converter para BRL."
+    },
+    "pergunta_esclarecimento": {
+      "type": "STRING",
+      "nullable": true
+    },
+    "confianca": {
+      "type": "NUMBER",
+      "description": "Certeza da classificação, de 0 a 1."
+    }
+  },
+  "required": ["raciocinio", "intencao", "cnpj", "moeda", "periodo_dias", "valor_conversao", "pergunta_esclarecimento", "confianca"],
+  "propertyOrdering": ["raciocinio", "intencao", "cnpj", "moeda", "periodo_dias", "valor_conversao", "pergunta_esclarecimento", "confianca"]
+}
